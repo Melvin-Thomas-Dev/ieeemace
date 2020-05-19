@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-migrations/
 post_images/
 *.py[cod]
 *$py.class

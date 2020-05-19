@@ -1,6 +1,6 @@
 from django.db import models
 from imagekit.models import ProcessedImageField
-import datetime
+# from datetime import datetime
 
 
 event_type_choices = (
