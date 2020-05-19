@@ -1,5 +1,6 @@
 from django.db import models
 from imagekit.models import ProcessedImageField
+import datetime
 
 
 event_type_choices = (
@@ -22,4 +23,7 @@ class Event(models.Model):
     fees = models.TextField(max_length=50, blank=True)
     prize = models.TextField(max_length=50, blank=True)
     cover = ProcessedImageField(upload_to='post_images', blank=False)
+    date_added=models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.name
