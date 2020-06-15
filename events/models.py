@@ -1,5 +1,5 @@
 from django.db import models
-from imagekit.models import ProcessedImageField
+# from imagekit.models import ProcessedImageField
 # from datetime import datetime
 
 
@@ -22,7 +22,7 @@ class Event(models.Model):
     date = models.CharField(max_length=100, blank=False)
     fees = models.TextField(max_length=50, blank=True)
     prize = models.TextField(max_length=50, blank=True)
-    cover = ProcessedImageField(upload_to='post_images', blank=False)
+    # cover = ProcessedImageField(upload_to='post_images', blank=False)
     date_added=models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
